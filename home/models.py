@@ -7,3 +7,8 @@ class Tyidhhd(models.Model):
     namert233 = models.TextField(
         blank=True,
     )
+
+
+class Vretyu(models.Model):
+    "Generated Model"
+    vgeyes = models.TextField()
