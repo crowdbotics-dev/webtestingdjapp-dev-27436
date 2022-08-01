@@ -4,4 +4,6 @@ from django.db import models
 
 class Tyidhhd(models.Model):
     "Generated Model"
-    namert = models.TextField()
+    namert233 = models.TextField(
+        blank=True,
+    )
