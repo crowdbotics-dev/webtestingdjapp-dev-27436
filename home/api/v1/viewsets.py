@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from home.models import Tyidhhd, Vretyu
-from .serializers import TyidhhdSerializer, VretyuSerializer
+from home.models import Tyidhhd
+from .serializers import TyidhhdSerializer
 from rest_framework import authentication
 from rest_framework.authtoken.serializers import AuthTokenSerializer
 from rest_framework.viewsets import ModelViewSet, ViewSet
@@ -41,12 +41,3 @@ class TyidhhdViewSet(viewsets.ModelViewSet):
         authentication.TokenAuthentication,
     )
     queryset = Tyidhhd.objects.all()
-
-
-class VretyuViewSet(viewsets.ModelViewSet):
-    serializer_class = VretyuSerializer
-    authentication_classes = (
-        authentication.SessionAuthentication,
-        authentication.TokenAuthentication,
-    )
-    queryset = Vretyu.objects.all()

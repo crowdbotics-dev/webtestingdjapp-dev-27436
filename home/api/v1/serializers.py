@@ -1,5 +1,5 @@
 from django.contrib.auth import get_user_model
-from home.models import Tyidhhd, Vretyu
+from home.models import Tyidhhd
 from django.http import HttpRequest
 from django.utils.translation import ugettext_lazy as _
 from allauth.account import app_settings as allauth_settings
@@ -79,10 +79,4 @@ class PasswordSerializer(PasswordResetSerializer):
 class TyidhhdSerializer(serializers.ModelSerializer):
     class Meta:
         model = Tyidhhd
-        fields = "__all__"
-
-
-class VretyuSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Vretyu
         fields = "__all__"
